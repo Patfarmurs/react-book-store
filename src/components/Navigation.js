@@ -1,13 +1,15 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 const Navigation = () => (
-  <div>
+  <nav>
+    <h1>BookStore</h1>
     <ul>
-      <li><Link to="/">Books</Link></li>
-      <li><Link to="/categories">Categories</Link></li>
+      <li><Link to="/">BOOKS</Link></li>
+      <li><Link to="/category">CATEGORY</Link></li>
     </ul>
-  </div>
+    <p>profile icon</p>
+  </nav>
 );
 
 export default Navigation;
