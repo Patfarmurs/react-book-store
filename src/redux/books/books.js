@@ -1,55 +1,30 @@
-import { v4 } from 'uuid';
+// define the action type
+const ADD_BOOKS = 'bookstore/books/ADD_BOOKS';
+const REMOVE_BOOKS = 'bookstore/books/REMOVE_BOOKS';
 
-const ADD = 'bookstore/books/ADD';
-const REMOVE = 'bookstore/books/REMOVE';
+// initial state
+const initialState = { books: [] };
 
-// Actions
-const addBook = (book) => ({
-  type: ADD,
-  book,
-});
+//  the action type to define the action creator
 
-const removeBook = (id) => ({
-  type: REMOVE,
-  id,
-});
+export const addBookAction = (newBook) => (
+  { type: ADD_BOOKS, newBook }
+);
+export const removeBookAction = (id) => (
+  { type: REMOVE_BOOKS, id }
+);
 
 // Reducer
-const bookReducer = (state = [
-  {
-    id: v4(),
-    title: 'The Pearl of a great price',
-    author: 'Joseph Smith',
-    genre: 'Gospel',
-  },
-  {
-    id: v4(),
-    title: 'The Prince',
-    author: 'Nicolo Makiaveli',
-    genre: 'philosophy',
-  },
-  {
-    id: v4(),
-    title: 'Price of my karma',
-    author: 'Patrick Mukul',
-    genre: 'philosophy',
-  },
-  {
-    id: v4(),
-    title: 'Metaphore',
-    author: 'Pitagore',
-    genre: 'historical',
-  },
-], action = {}) => {
+const booksReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD:
-      return [...state, action.book];
-    case REMOVE:
-      return [...state.filter((book) => book.id !== action.id)];
+    case ADD_BOOKS:
+      return {
+        ...state,
+        books: [...state.filter((book) => book.id !== action.id)],
+      };
     default:
       return state;
   }
 };
 
-export { addBook, removeBook };
-export default bookReducer;
+export default booksReducer;
