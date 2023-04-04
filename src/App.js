@@ -1,19 +1,17 @@
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import Categories from './pages/CategoriesPg';
+import BookList from './components/BookList';
 import Navigation from './components/Navigation';
+import CategoryPage from './pages/CategoryPage';
 
-function App() {
-  return (
-    <>
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/categories" element={<Categories />} />
-      </Routes>
-    </>
-
-  );
-}
+const App = () => (
+  <div>
+    <Navigation />
+    <Routes>
+      <Route path="/" element={<BookList />} />
+      <Route path="/category" element={<CategoryPage />} />
+    </Routes>
+  </div>
+);
 
 export default App;
