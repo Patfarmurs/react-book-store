@@ -1,18 +1,17 @@
 import React from 'react';
 
-const Form = () => (
-  <div>
-    <form>
-      <input type="text" name="title" id="title" placeholder="Add Book Title" />
-      <select name="author" id="author">
-        <option value="makiavely">Makiavely</option>
-        <option value="lincoln">Lincoln</option>
-        <option value="jc rouso">JC Rouso</option>
-        <option value="jane-dark">Jane Dark</option>
-      </select>
-      <button type="button">Add Book</button>
-    </form>
-  </div>
-);
+const BookForm = () => {
+  const title = 'ADD NEW BOOK';
+  return (
+    <section>
+      <h2>{title}</h2>
+      <form>
+        <input type="text" placeholder="Add title" className="input-text" name="title" />
+        <input type="text" placeholder="Add author" className="input-text" name="author" />
+        <button type="submit">ADD BOOK</button>
+      </form>
+    </section>
+  );
+};
 
-export default Form;
+export default BookForm;
