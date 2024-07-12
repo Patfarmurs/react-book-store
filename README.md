@@ -1,29 +1,36 @@
+<a name="readme-top"></a>
+
+<div align="center">
+  <h3><b>React BookStore App</b></h1>
+</div>
 
 # 📗 Table of Contents
 
-- [📖 Books store ](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [Book store 📖 ](#book-store--)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+- [Setup:](#setup)
+- [Install:](#install)
+    - [Install this project with:](#install-this-project-with)
+- [Usage](#usage)
+    - [To run the project, execute the following command:](#to-run-the-project-execute-the-following-command)
+- [Run tests:](#run-tests)
+    - [To run tests, run the following command:](#to-run-tests-run-the-following-command)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🔭 Future Features ](#-future-features-)
+- [📝 License:](#-license)
 
+<!-- PROJECT DESCRIPTION -->
 
-
-# 📖<a name="Book Store"></a>
+#React Book store 📖 <a name="about-project"></a>
 
 
 **Book Store is a Single Page App that allows you to:
@@ -36,39 +43,32 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
+
 <details>
-  <summary>Languages</summary>
+  <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://reactjs.org/">CSS</a></li>
-    <li><a href="https://reactjs.org/">Redux</a></li>
-    <li><a href="https://reactjs.org/">Javascript</a></li>
   </ul>
 </details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">GitHub</a></li>
-  </ul>
-</details>
-
 
 ### Key Features <a name="key-features"></a>
 
-
-- Add a book to the list
-- Delete a selected book from the list
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+<details>
+ Some Key feature of this project 
+  <ul>
+    <li>User can read book</li>
+    <li>User can make CRUD operatopn with the book list</li>
+  </ul>
+</details>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Coming soon
+
+- [Book Store](https://react-book-store-7nwr.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -78,73 +78,93 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
+- [x] A web browser like Google Chrome.
+- [x] A code editor like Visual Studio Code with Git and Node.js.
 
-### Setup
-
-Clone this repository to your desired folder:
-
-```sh
-  git clone https://github.com/Patfarmurs/react-book-store
-  cd Book-store
+You can check if Git is installed by running the following command in the terminal.
+```
+$ git --version
 ```
 
-### Install
+Likewise for Node.js and npm for package installation.
+```
+$ node --version && npm --version
+```
 
-Install this project with:
+# Setup:
+- Clone this repository to your desired folder.
 
-```sh
+# Install:
+### Install this project with:
+- Git.
+- Github.
+# Usage
+
+### To run the project, execute the following command:
+
+  ```sh 
+  git clone https://github.com/Patfarmurs/react-book-store.git
+  ```
+  ```sh 
+  cd react-book-store
+  ```
+  ```sh 
   npm install
-```
-
-### Usage
-
-To run the project, execute the following command:
-
-```sh
+  ```
+  ```sh 
   npm start
-```
+  ```
 
-### Run tests
+**You may also see any lint errors in the console.**
 
-To run tests, run the following command:
 
-```sh
+
+# Run tests:
+
+  ```sh 
+  npm install react-test-renderer --save-dev
+  ```
+  ```sh 
+  npm install --save-dev @testing-library/react
+  ```
+  ```sh 
   npm run test
-```
+  ```
+### To run tests, run the following command:
+  ```sh 
+  npx eslint .
+  ```
+   ```sh 
+  npx stylelint "**/*.{css,scss}
+  ```
+
+
 
 ### Deployment
 
 You can deploy this project using:
 
- ```sh
-  You can deploy this project using <a>Github Pages</a>
 ```
+$ npm run deploy
+```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Patfarmurs**
+👤 **Patrick Mukula**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Patfarmurs](https://github.com/Patfarmurs)
+- Twitter: [@MukulayengeP](https://twitter.com/MukulayengeP)
+- LinkedIn: [Patrick Mukula](https://linkedin.com/in/patrick-mukula/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-## 🔭 Future Features <a name="future-features"></a>
-
-
-- Add reducers and actions
-- Use Redux in react components
-- Connect to API
-- Styling
-- Add a live demo link
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -156,15 +176,21 @@ Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
 
-## 📝 License <a name="license"></a>
+- [ ]  Connect to an API.
+- [ ]  Styling the App.
 
-This project is [MIT](https://github.com/Patfarmurs/Book-store/blob/redux-components/MIT.md) licensed.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# 📝 License:
+This project is [MIT](./LICENSE) licensed.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
